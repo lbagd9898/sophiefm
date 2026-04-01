@@ -4,7 +4,6 @@ export const about = defineType({
   name: "about",
   title: "About",
   type: "document",
-  __experimental_actions: ["update", "publish"], // removes "create" and "delete"
   fields: [
     defineField({
       name: "bio",
