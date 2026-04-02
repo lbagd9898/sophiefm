@@ -1,0 +1,78 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Job Title"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "company",
+        "type": "string"
+      },
+      {
+        "name": "startDate",
+        "type": "date"
+      },
+      {
+        "name": "current",
+        "type": "boolean",
+        "title": "Current Job"
+      },
+      {
+        "name": "endDate",
+        "type": "date"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      }
+    ],
+    "name": "job",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "bio",
+        "type": "text",
+        "title": "About Me"
+      }
+    ],
+    "name": "about",
+    "type": "document"
+  }
+]
