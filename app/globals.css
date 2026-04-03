@@ -49,3 +49,12 @@ body {
   animation: fall-in 0.6s ease-out 0.3s forwards;
   opacity: 0;
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}

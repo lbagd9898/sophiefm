@@ -1,5 +1,6 @@
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/lib/client";
+import Carousel from "./Carousel";
 
 const ABOUT_QUERY = `*[_type == "about"][0]{ bio }`;
 
@@ -12,8 +13,10 @@ export async function About() {
 
   return (
     <section className="relative grid w-full min-h-full bg-white grid-cols-1 sm:grid-cols-2 xl:grid-cols-[1fr_2fr] items-center text-center">
-      <div className="bg-red-400 h-full"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center w-full">
+      <div className="bg-red-400 h-[50vh] lg:h-[60vh]">
+        <Carousel></Carousel>
+      </div>
+      <div className="relative my-5 sm:my-10 z-10 flex flex-col items-center justify-center w-full">
         <div className="relative px-8 sm:px-12 py-10 rounded-2xl border border-slate-200 bg-slate-50/60 shadow-sm">
           {/* Corner accents */}
           <span className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-purple-300 rounded-tl-md" />
