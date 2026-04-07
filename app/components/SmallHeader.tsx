@@ -9,9 +9,11 @@ export default function SmallHeader({ headers }) {
           <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
             {headers.bigHeader}
           </h1>
-          <h2 className="text-purple-200 text-sm sm:text-md md:text-lg font-light tracking-widest uppercase">
-            {headers.smallHeader}
-          </h2>
+          {headers.smallHeader && (
+            <h2 className="text-purple-200 text-sm sm:text-md md:text-lg font-light tracking-widest uppercase">
+              {headers.smallHeader}
+            </h2>
+          )}
         </div>
       </div>
     </header>
