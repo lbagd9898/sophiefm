@@ -1,6 +1,6 @@
 import { Navigation } from "./Navigation";
 
-export default function SmallHeader({ headers }: { headers: string[] }) {
+export default function SmallHeader({ headers }: { headers: object }) {
   return (
     <header className="w-full bg-gradient-to-br from-purple-950 via-purple-800 to-indigo-900 flex flex-col items-center justify-center">
       <Navigation />
