@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "@/public/github.svg";
+import profilePic from "@/public/carousel/womenseng.jpeg";
 import { Navigation } from "./Navigation";
 
 export function Header() {
@@ -15,7 +15,7 @@ export function Header() {
               alt="Sophie Fusco Mckeown"
               width={112}
               height={112}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full object-[50%_45%]"
               priority
             />
           </div>

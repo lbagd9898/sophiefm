@@ -11,9 +11,13 @@ interface Service {
 export default async function ServicePage() {
   const services: Service[] = await client.fetch(`*[_type == "service"]`);
   console.log(services);
+  const serviceHeaders = {
+    bigHeader: "Services",
+    smallHeader: "Sports Management | Career Advising",
+  };
   return (
     <>
-      <SmallHeader />
+      <SmallHeader headers={serviceHeaders} />
       <PhotoQuote />
       <Services services={services}></Services>
     </>
