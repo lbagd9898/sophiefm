@@ -16,15 +16,15 @@ export async function About() {
       <div className="bg-red-400 h-[50vh] lg:h-[60vh]">
         <Carousel></Carousel>
       </div>
-      <div className="relative my-5 sm:my-10 z-10 flex flex-col gap-3 items-center justify-center w-full">
+      <div className="relative sm:my-5 md:p-5 z-10 flex flex-col gap-3 items-center justify-center w-full">
         {/* About Me card */}
-        <div className="relative px-8 sm:px-12 py-10 rounded-2xl border border-purple-100 bg-white/40 backdrop-blur-md shadow-lg shadow-purple-100">
+        <div className="relative px-8 sm:px-12 py-10 md:rounded-2xl border border-purple-100 bg-white/40 backdrop-blur-md shadow-lg shadow-purple-100">
           {/* Corner accents */}
           <span className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-purple-300 rounded-tl-md" />
           <span className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-purple-300 rounded-tr-md" />
           <span className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-purple-300 rounded-bl-md" />
           <span className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-purple-300 rounded-br-md" />
-          <h1 className="text-3xl sm:text-4xl animate-fall-in font-bold tracking-tight mb-5 bg-clip-text text-purple-900">
+          <h1 className="text-2xl sm:text-4xl animate-fall-in font-bold tracking-tight mb-5 bg-clip-text text-purple-900">
             About Me
           </h1>
           <p className="text-base sm:text-lg animate-fall-in leading-relaxed text-slate-600 whitespace-pre-wrap">

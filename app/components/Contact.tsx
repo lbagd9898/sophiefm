@@ -1,13 +1,11 @@
-import { FaEnvelope, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
 export default function ContactCards() {
   return (
     <section className="relative w-full flex-1 bg-gradient-to-br from-white via-slate-200 to-white flex items-center justify-center py-16 px-4">
       <div className="w-full max-w-xl text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-3">
+        <h1 className="animate-fall-in text-3xl sm:text-4xl font-bold text-slate-800 mb-3">
           Let's connect
         </h1>
-        <p className="text-base sm:text-lg text-slate-500 leading-relaxed mb-10">
+        <p className="animate-fall-in-delay-1 text-base sm:text-lg text-slate-500 leading-relaxed mb-10">
           Whether you have a question about sports management, accessibility, or
           career coaching — Sophie would love to hear from you.
         </p>
@@ -16,7 +14,7 @@ export default function ContactCards() {
           {/* Email */}
           <a
             href="mailto:sophie@example.com"
-            className="flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 hover:border-slate-400 hover:bg-white hover:shadow-md transition-all duration-200"
+            className="animate-fall-in-delay-2 contact-card flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 transition-all duration-200"
           >
             <div className="w-10 h-10 rounded-full bg-purple-50 flex items-center justify-center shrink-0">
               <svg
@@ -44,7 +42,7 @@ export default function ContactCards() {
           {/* WhatsApp */}
           <a
             href="https://wa.me/441234567890"
-            className="flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 hover:border-slate-400 hover:bg-white hover:shadow-md transition-all duration-200"
+            className="animate-fall-in-delay-3 contact-card flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 transition-all duration-200"
           >
             <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center shrink-0">
               <svg
@@ -71,7 +69,7 @@ export default function ContactCards() {
           {/* Phone */}
           <a
             href="tel:+441234567890"
-            className="flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 hover:border-slate-400 hover:bg-white hover:shadow-md transition-all duration-200"
+            className="animate-fall-in-delay-4 contact-card flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 transition-all duration-200"
           >
             <div className="w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center shrink-0">
               <svg
@@ -97,10 +95,10 @@ export default function ContactCards() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/sophie"
+            href="https://www.linkedin.com/in/sophiefuscomckeown/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 hover:border-slate-400 hover:bg-white hover:shadow-md transition-all duration-200"
+            className="animate-fall-in-delay-5 contact-card flex items-center gap-4 bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-4 transition-all duration-200"
           >
             <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
               <svg

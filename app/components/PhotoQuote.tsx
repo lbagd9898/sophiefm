@@ -1,9 +1,6 @@
 import Image from "next/image";
 import stadium from "@/public/stadium.jpeg";
-import { Lora } from "next/font/google";
 import { client } from "@/sanity/lib/client";
-
-const lora = Lora({ subsets: ["latin"], style: ["italic"] });
 
 export default async function PhotoQuote() {
   const quote = await client.fetch(`*[_type == "quote"][0]`);
@@ -17,7 +14,7 @@ export default async function PhotoQuote() {
         priority
       />
       <div
-        className={`text-white text-lg md:text-3xl lg:text-4xl z-10 backdrop-blur-sm bg-white/10 rounded-2xl px-6 py-4 ${lora.className}`}
+        className="text-white text-lg md:text-3xl lg:text-4xl z-10 backdrop-blur-sm bg-white/10 rounded-2xl px-6 py-4"
       >
         {quote.quote}
       </div>
