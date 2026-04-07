@@ -7,11 +7,7 @@ interface SmallHeaderProps {
   };
 }
 
-export default function SmallHeader({
-  headers,
-}: {
-  headers: SmallHeaderProps;
-}) {
+export default function SmallHeader({ headers }: SmallHeaderProps) {
   return (
     <header className="w-full bg-gradient-to-br from-purple-950 via-purple-800 to-indigo-900 flex flex-col items-center justify-center">
       <Navigation />
