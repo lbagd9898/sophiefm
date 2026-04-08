@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navigation() {
   const linkClass = `
-  relative text-white/55 text-[11px] font-semibold tracking-[0.18em] uppercase
+  relative text-white/75 text-[11px] font-semibold tracking-[0.18em] uppercase
   px-6 py-2 transition-colors duration-200 hover:text-white active:opacity-60
   after:absolute after:bottom-0 after:left-1/2 after:right-1/2 after:h-[1.5px]
   after:bg-white after:rounded-full after:transition-all after:duration-250
@@ -14,11 +14,11 @@ export function Navigation() {
         <Link href="/" className={linkClass}>
           Home
         </Link>
-        <div className="hidden sm:block w-px h-3 bg-white/20" />
+        <div className="hidden sm:block w-px h-3 bg-white/20" aria-hidden="true" />
         <Link href="/services" className={linkClass}>
           Services
         </Link>
-        <div className="hidden sm:block w-px h-3 bg-white/20" />
+        <div className="hidden sm:block w-px h-3 bg-white/20" aria-hidden="true" />
         <Link href="/contact" className={linkClass}>
           Contact
         </Link>

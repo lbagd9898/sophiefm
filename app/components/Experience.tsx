@@ -11,7 +11,7 @@ export function Experience({ jobs }: { jobs: any[] }) {
         <h2 className="text-slate-800 text-3xl md:text-4xl font-bold tracking-tight">
           Experience
         </h2>
-        <div className="w-12 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-400 rounded-full mt-1" />
+        <div className="w-12 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-400 rounded-full mt-1" aria-hidden="true" />
       </div>
 
       {/* Grid */}

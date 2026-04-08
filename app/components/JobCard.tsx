@@ -12,7 +12,7 @@ export function JobCard({ job }: { job: any }) {
   return (
     <div className="group relative flex flex-col gap-3 h-full bg-white/70 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 xl:p-8 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
       {/* Top accent bar */}
-      <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-purple-400/0 via-purple-400/60 to-indigo-400/0 rounded-full" />
+      <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-purple-400/0 via-purple-400/60 to-indigo-400/0 rounded-full" aria-hidden="true" />
 
       {/* Header */}
       <div className="flex flex-col gap-1">
@@ -40,7 +40,7 @@ export function JobCard({ job }: { job: any }) {
 
       {/* Divider */}
       {job.description && (
-        <div className="w-8 h-px bg-slate-200 rounded-full" />
+        <div className="w-8 h-px bg-slate-200 rounded-full" aria-hidden="true" />
       )}
 
       {/* Description */}

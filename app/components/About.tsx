@@ -13,7 +13,7 @@ export async function About() {
 
   return (
     <section className="relative grid w-full min-h-full bg-gradient-to-br from-white via-slate-200 to-white grid-cols-1 sm:grid-cols-2 xl:grid-cols-[1fr_2fr] items-center text-center">
-      <div className="bg-red-400 h-[50vh] lg:h-[60vh]">
+      <div className="h-[50vh] lg:h-[60vh]">
         <Carousel></Carousel>
       </div>
       <div className="relative sm:my-5 md:p-5 z-10 flex flex-col gap-3 items-center justify-center w-full">
@@ -24,9 +24,9 @@ export async function About() {
           <span className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-purple-300 rounded-tr-md" />
           <span className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-purple-300 rounded-bl-md" />
           <span className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-purple-300 rounded-br-md" />
-          <h1 className="text-2xl sm:text-4xl animate-fall-in font-bold tracking-tight mb-5 bg-clip-text text-purple-900">
+          <h2 className="text-2xl sm:text-4xl animate-fall-in font-bold tracking-tight mb-5 bg-clip-text text-purple-900">
             About Me
-          </h1>
+          </h2>
           <p className="text-base sm:text-lg animate-fall-in leading-relaxed text-slate-600 whitespace-pre-wrap">
             {about?.bio}
           </p>
@@ -42,6 +42,7 @@ export async function About() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={1.5}
+                aria-hidden="true"
               >
                 <circle
                   cx="12"
@@ -71,6 +72,7 @@ export async function About() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={1.5}
+                aria-hidden="true"
               >
                 <circle
                   cx="12"
@@ -99,6 +101,7 @@ export async function About() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={1.5}
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"

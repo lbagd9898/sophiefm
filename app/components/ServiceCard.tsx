@@ -7,7 +7,7 @@ export function ServiceCard({ service, index = 0 }: { service: any; index?: numb
       style={{ animationDelay: `${index * 0.15}s`, opacity: 0 }}
     >
       {/* Top accent bar */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-purple-500 to-pink-500" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-purple-500 to-pink-500" aria-hidden="true" />
 
       {/* Icon */}
       <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl bg-purple-50 flex items-center justify-center">
@@ -23,6 +23,7 @@ export function ServiceCard({ service, index = 0 }: { service: any; index?: numb
             strokeWidth="1.75"
             strokeLinecap="round"
             strokeLinejoin="round"
+            aria-hidden="true"
           >
             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
           </svg>
@@ -51,7 +52,7 @@ export function ServiceCard({ service, index = 0 }: { service: any; index?: numb
               key={i}
               className="flex items-start gap-2.5 text-slate-700 text-sm lg:text-base leading-relaxed"
             >
-              <span className="mt-[7px] shrink-0 w-1.5 h-1.5 rounded-full bg-purple-400" />
+              <span className="mt-[7px] shrink-0 w-1.5 h-1.5 rounded-full bg-purple-400" aria-hidden="true" />
               {point}
             </li>
           ))}
@@ -80,6 +81,7 @@ export function ServiceCard({ service, index = 0 }: { service: any; index?: numb
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
+            aria-hidden="true"
           >
             <path d="M12 20h9" />
             <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z" />

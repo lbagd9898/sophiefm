@@ -16,7 +16,10 @@ const lora = Lora({ subsets: ["latin"], style: ["italic"] });
 
 export const metadata: Metadata = {
   title: "Sophie Fusco Mckeown",
-  description: "Sophie's Portfolio",
+  description: "Sports Management & Career Coaching",
+  icons: {
+    icon: "/carousel/womenseng-rounded.png",
+  },
 };
 
 export default function RootLayout({

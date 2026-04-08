@@ -21,8 +21,9 @@ export default function Carousel() {
         <div className="flex-[0_0_100%] relative">
           <Image
             src="/carousel/commonwealth.jpeg"
-            alt="Sophie at the Paris Olympics stadium"
+            alt="Sophie at the Commonwealth Games"
             fill
+            sizes="(max-width: 640px) 100vw, 33vw"
             className="object-cover object-[50%_75%] md:object-[50%_65%] lg:object-[50%_75%]"
             priority
           />
@@ -30,7 +31,7 @@ export default function Carousel() {
         <div className="flex-[0_0_100%] relative">
           <Image
             src="/carousel/wimbledon.jpeg"
-            alt="Sophie at the Paris Olympics stadium"
+            alt="Sophie at Wimbledon"
             fill
             sizes="(max-width: 640px) 100vw, 33vw"
             className="object-cover object-[50%_75%] md:object-[50%_65%] lg:object-[50%_75%]"
@@ -40,7 +41,7 @@ export default function Carousel() {
         <div className="flex-[0_0_100%] relative">
           <Image
             src="/carousel/womenseng.jpeg"
-            alt="Sophie at the Paris Olympics stadium"
+            alt="Sophie with the England women's team"
             fill
             sizes="(max-width: 640px) 100vw, 33vw"
             className="object-cover object-[50%_60%] md:object-[50%_55%] lg:object-[50%_40%]"
@@ -50,7 +51,7 @@ export default function Carousel() {
         <div className="flex-[0_0_100%] relative">
           <Image
             src="/carousel/working.jpeg"
-            alt="Sophie at the Paris Olympics stadium"
+            alt="Sophie working"
             fill
             sizes="(max-width: 640px) 100vw, 33vw"
             className="object-cover object-[50%_70%] md:object-[50%_65%] lg:object-[50%_75%]"
@@ -63,6 +64,7 @@ export default function Carousel() {
       <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3">
         <button
           onClick={goToPrev}
+          aria-label="Previous image"
           className="
       group relative w-10 h-10 rounded-full
       bg-white/30 backdrop-blur-sm
@@ -71,6 +73,7 @@ export default function Carousel() {
       transition-all duration-200
       hover:bg-white/50
       active:scale-90 active:bg-white/60
+      focus:outline-2 focus:outline-offset-2 focus:outline-white
       overflow-hidden
     "
         >
@@ -83,7 +86,7 @@ export default function Carousel() {
               animation: "shimmer 1.2s infinite",
             }}
           />
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path
               d="M10 12L6 8l4-4"
               stroke="white"
@@ -96,6 +99,7 @@ export default function Carousel() {
 
         <button
           onClick={goToNext}
+          aria-label="Next image"
           className="
       group relative w-10 h-10 rounded-full
       bg-white/30 backdrop-blur-sm
@@ -104,6 +108,7 @@ export default function Carousel() {
       transition-all duration-200
       hover:bg-white/50
       active:scale-90 active:bg-white/60
+      focus:outline-2 focus:outline-offset-2 focus:outline-white
       overflow-hidden
     "
         >
@@ -116,7 +121,7 @@ export default function Carousel() {
               animation: "shimmer 1.2s infinite",
             }}
           />
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path
               d="M6 4l4 4-4 4"
               stroke="white"

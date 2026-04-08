@@ -14,7 +14,7 @@ export default async function PhotoQuote() {
         priority
       />
       <div
-        className="text-white text-lg md:text-3xl lg:text-4xl z-10 backdrop-blur-sm bg-white/10 rounded-2xl px-6 py-4"
+        className="text-white text-lg md:text-3xl lg:text-4xl z-10 backdrop-blur-sm bg-black/50 rounded-2xl px-6 py-4"
       >
         {quote.quote}
       </div>
