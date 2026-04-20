@@ -4,12 +4,8 @@ import Carousel from "./Carousel";
 
 const ABOUT_QUERY = `*[_type == "about"][0]{ bio }`;
 
-type AboutDocument = SanityDocument & {
-  bio: string;
-};
-
 export async function About() {
-  const { data: about } = await sanityFetch<AboutDocument>({ query: ABOUT_QUERY });
+  const { data: about } = await sanityFetch({ query: ABOUT_QUERY });
 
   return (
     <section className="relative grid w-full min-h-full bg-gradient-to-br from-white via-slate-200 to-white grid-cols-1 sm:grid-cols-2 xl:grid-cols-[1fr_2fr] items-center text-center">
