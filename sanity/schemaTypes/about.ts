@@ -4,6 +4,7 @@ export const about = defineType({
   name: "about",
   title: "About",
   type: "document",
+  __experimental_actions: ["update", "delete"],
   fields: [
     defineField({
       name: "bio",

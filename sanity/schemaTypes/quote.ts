@@ -4,6 +4,7 @@ export const quote = defineType({
   name: "quote",
   title: "Quote",
   type: "document",
+  __experimental_actions: ["update", "delete"],
   fields: [
     defineField({
       name: "quote",
