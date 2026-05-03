@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sophie Fusco Mckeown — Portfolio
+
+Personal portfolio site for Sophie Fusco Mckeown, built with Next.js and Sanity CMS.
+
+## Tech Stack
+
+- **[Next.js 16](https://nextjs.org)** (App Router) — React framework with server components
+- **[Sanity v5](https://www.sanity.io)** — headless CMS for content management
+- **[Tailwind CSS v4](https://tailwindcss.com)** — utility-first styling via PostCSS
+- **[Embla Carousel](https://www.embla-carousel.com)** — carousel with autoplay
+- **[React Icons](https://react-icons.github.io/react-icons/)** — icon library
+- **TypeScript** — throughout
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Set up environment variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2024-01-01
+```
+
+You can find your project ID and dataset in the [Sanity manage dashboard](https://www.sanity.io/manage).
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Using Sanity
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Accessing the Studio
 
-## Learn More
+The embedded Sanity Studio is available at [http://localhost:3000/studio](http://localhost:3000/studio) when the dev server is running. Log in with your Sanity account to edit content.
 
-To learn more about Next.js, take a look at the following resources:
+### Content Types
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Schema | Description |
+|--------|-------------|
+| `job` | Work experience entries shown on the home page |
+| `about` | About section text and details |
+| `service` | Services listed on the /services page |
+| `quote` | Pull quote displayed on the /services page |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Schemas
 
-## Deploy on Vercel
+Schema definitions live in `sanity/schemaTypes/`. To add a new content type, create a schema file there and register it in `sanity/schemaTypes/index.ts`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Other Commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build    # Build for production
+npm run lint     # Run ESLint
+```
